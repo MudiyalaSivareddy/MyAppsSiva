@@ -1,0 +1,5 @@
+com\mkyong\service\EmpService.class
+com\mkyong\repository\EmpRepository.class
+com\mkyong\StartBookApplication.class
+com\mkyong\controller\EmpController.class
+com\mkyong\entity\Emp.class

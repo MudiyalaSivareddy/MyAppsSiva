@@ -1,5 +1,6 @@
 package com.mkyong.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,33 +12,27 @@ import javax.persistence.Table;
 
 public class Emp {
 	@Id
-	@GeneratedValue
-	private int Eid;
-	private String Ename;
-	private int age;
-	public Emp(){
-			}
-	public Emp(int eid, String ename, int age) {
-		this.Eid = eid;
-		this.Ename = ename;
-		this.age = age;
-	}
-	public Emp(String ename, int age) {
-			this.Ename = ename;
-		this.age = age;
-	}
 	
+	private int Eid;
+	private String name;
+	private int age;
+	public Emp() {}
+	public Emp(int eid, String name, int age) {
+		this.Eid = eid;
+		this.name = name;
+		this.age = age;
+	}
 	public int getEid() {
 		return Eid;
 	}
 	public void setEid(int eid) {
 		Eid = eid;
 	}
-	public String getEname() {
-		return Ename;
+	public String getName() {
+		return name;
 	}
-	public void setEname(String ename) {
-		Ename = ename;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public int getAge() {
 		return age;
@@ -46,10 +41,5 @@ public class Emp {
 		this.age = age;
 	}
 	
-	@Override
-	public String toString() {
-		return "Emp [Eid=" + Eid + ", Ename=" + Ename + ", age=" + age + "]";
-	}
 	
-
 }
