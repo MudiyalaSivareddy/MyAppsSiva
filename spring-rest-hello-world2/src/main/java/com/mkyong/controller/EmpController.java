@@ -58,6 +58,7 @@ public class EmpController {
 @GetMapping("/empName/{name}") 
 public List<Emp> findEmpByName(@PathVariable String name){
 	return service.findByName(name);
+	//end of the code
 
 }
 	
