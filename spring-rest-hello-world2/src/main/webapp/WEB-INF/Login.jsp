@@ -7,11 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="/empReg">  
-<input type="text" name="uname" value="Name..." onclick="this.value=''"/><br/>  
-<input type="text" name="uemail"  value="Email ID..." onclick="this.value=''"/><br/>  
-<input type="password" name="upass"  value="Password..." onclick="this.value=''"/><br/>  
-<input type="submit" value="register"/>  
-</form>  
+<h2>Your data is saved Correctly</h2>
+
 </body>
 </html>

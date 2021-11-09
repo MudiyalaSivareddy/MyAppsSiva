@@ -5,15 +5,20 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-@Controller
-@ControllerAdvice
+//@Controller
+//@ControllerAdvice
 public class EmpNotFoundException extends Exception {
 	
-	@ExceptionHandler(value=EmpNotFoundException.class)
-	public String EmpNotFoundException(Model model) {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6378008919020125130L;
+
+	//@ExceptionHandler(value=EmpNotFoundException.class)
+	public EmpNotFoundException(String Message) {
 		
-		model.addAttribute("msg","Employeee details not avaible i DB");
-		return "error";
+		super(Message);
+		//
 	}
 	
 
